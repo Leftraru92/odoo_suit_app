@@ -10,10 +10,9 @@ class Operaciones(models.Model):
     name = fields.Char('Operacion')
     numero_operacion = fields.Char('Nro Operacion')
     tipo_operacion = fields.Selection([('recarga', 'Recarga'), ('compra', 'Consumo'),
-                                       ('transferencia', 'Transferencia'), ('devolucion', 'Devoluciones'),
-                                       ('cancelacion', 'Cancelación'), ('otros', 'Otros')])
-    estado_operacion = fields.Selection([('activo', 'Activo'), ('inactivo', 'Inactivo')])
+                                       ('devolucion', 'Devoluciones')])
+    estado_operacion = fields.Selection([('confirmado', 'Confirmado'), ('pendiente', 'Pendiente')])
     fecha = fields.Date('Fecha')
     hora = fields.Float(string='Hora')
     id_cliente = fields.Many2one('res.partner', string='Cliente')
-    importe_total = fields.Float('Total')
+    importe_total = fields.Float('Importe')

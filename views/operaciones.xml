@@ -4,7 +4,7 @@
     <record id="id_operaciones_formularios" model="ir.actions.act_window">
         <field name="name">Operaciones</field>
         <field name="res_model">operaciones</field>
-        <field name="view_mode">tree,form,graph</field>
+        <field name="view_mode">tree,form,graph,pivot</field>
     </record>
 
     <menuitem name="Suit App" id="suit_app_base_menu" />
@@ -70,10 +70,22 @@
        <field name="arch" type="xml">
              <graph string="Recargas y consumos">
                   <field name="tipo_operacion" group="True"/>
-                 <field name="id_cliente"/>
+                  <field name="estado_operacion"/>
                   <field name="importe_total" type="measure"/>
             </graph>
         </field>
+    </record>
+
+    <record id="operaciones_pivot_view" model="ir.ui.view">
+       <field name="name">Operaciones</field>
+       <field name="model">operaciones</field>
+       <field name="arch" type="xml">
+           <pivot string="Operaciones Pivot">
+               <field name="importe_total" type="measure"/>
+               <field name="tipo_operacion" type="col"/>
+               <field name="fecha" type="row"/>
+           </pivot>
+       </field>
     </record>
 
 </odoo>
