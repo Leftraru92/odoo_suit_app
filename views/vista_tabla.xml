@@ -1,0 +1,18 @@
+<odoo>
+    <template id="assets-frontend" inherit_id="website.assets_frontend" name="Vista Tabla">
+      <xpath expr="." position="inside">
+      </xpath>
+    </template>
+
+    <template id="id_vista_tabla">
+        <t t-call="website.layout">
+          <h1>Vista tabla</h1>
+            <ul>
+            <li t-foreach="dato" t-as="d">
+                <span t-esc="d[0]"/>
+            </li>
+          </ul>
+       </t>
+    </template>
+
+</odoo>

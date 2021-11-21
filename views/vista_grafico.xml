@@ -1,0 +1,11 @@
+<odoo>
+    <data>
+
+        <template id="id_vista_grafico">
+             <t t-call="website.layout">
+                 <h1>Vista gráfico</h1>
+             </t>
+        </template>
+
+    </data>
+</odoo>

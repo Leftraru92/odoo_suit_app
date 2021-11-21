@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_suit_app_suit_app,suit_app.suit_app,model_suit_app_suit_app,group_librarian,1,1,1,1
+access_suit_app_suit_app,suit_app.suit_app,model_operations,group_librarian,1,1,1,1
