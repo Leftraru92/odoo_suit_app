@@ -2,8 +2,15 @@
     <data>
 
         <template id="id_vista_grafico">
+
+            <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+
              <t t-call="website.layout">
-                 <h1>Vista gráfico</h1>
+                 <h3>Vista gráfico</h3>
+
+                  <t t-raw="best_buyers"/>
+                 
+                 <div id="chartContainer" style="height: 370px; max-width: 920px; margin: 0px auto;"></div>
              </t>
         </template>
 
