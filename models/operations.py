@@ -7,8 +7,6 @@ from odoo.http import request
 class Operaciones(models.Model):
     _name = 'operaciones'
 
-    name = fields.Char('Operacion')
-    numero_operacion = fields.Char('Nro Operacion')
     tipo_operacion = fields.Selection([('recarga', 'Recarga'), ('compra', 'Consumo'),
                                        ('devolucion', 'Devoluciones')])
     estado_operacion = fields.Selection([('confirmado', 'Confirmado'), ('pendiente', 'Pendiente')])

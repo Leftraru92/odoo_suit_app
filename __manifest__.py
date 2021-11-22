@@ -28,8 +28,8 @@
         'views/views.xml',
         'views/templates.xml',
         'views/operaciones.xml',
-        'views/vista_tabla.xml',
-        'views/vista_grafico.xml',
+        'web/view/vista_tabla.xml',
+        'web/view/vista_grafico.xml',
     ],
     # only loaded in demonstration mode
     'demo': [

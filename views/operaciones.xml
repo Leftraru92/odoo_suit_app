@@ -7,15 +7,21 @@
         <field name="view_mode">tree,form,graph,pivot</field>
     </record>
 
+    <record id="id_operaciones_front" model="ir.actions.act_url">
+        <field name="name">Web Page</field>
+        <field name="url">/suit_app/vista/1</field>
+    </record>
+
     <menuitem name="Suit App" id="suit_app_base_menu" />
-    <menuitem name="Operaciones" id="library_book_menu" parent="suit_app_base_menu" action="id_operaciones_formularios"/>
+    <menuitem name="Operaciones" id="operaciones_menu" parent="suit_app_base_menu" action="id_operaciones_formularios"/>
+    <menuitem name="Web Page" id="front_menu" parent="suit_app_base_menu" action="id_operaciones_front"/>
 
     <record id="id_operaciones_view_tree" model="ir.ui.view">
         <field name="name">Lista de Operaciones</field>
         <field name="model">operaciones</field>
         <field name="arch" type="xml">
             <tree>
-                <field name="numero_operacion" string="Nro Operación"/>
+                <field name="id" string="Nro Operación"/>
                 <field name="fecha" string="Fecha"/>
                 <field name="hora" string="Hora" widget="float_time"/>
                 <field name="id_cliente" string="Cliente"/>
@@ -34,7 +40,6 @@
                 <sheet>
                     <group>
                         <group>
-                            <field name="numero_operacion" string="Nro Operación"/>
                             <field name="fecha" string="Fecha"/>
                             <field name="hora" string="Hora" widget="float_time"/>
                             <field name="id_cliente" string="Cliente"/>
@@ -56,7 +61,7 @@
         <field name="model">operaciones</field>
         <field name="arch" type="xml">
             <search>
-                <field name="numero_operacion"/>
+                <field name="id"/>
                 <field name="id_cliente"/>
             </search>
         </field>
