@@ -1,30 +1,77 @@
 <odoo>
     <data>
-<!--
-          <record id="object0" model="suit_app.suit_app">
-            <field name="name">Object 0</field>
-            <field name="value">0</field>
+
+          <record id="object0" model="suit_app.operaciones">
+            <field name="tipo_operacion ">recarga</field>
+            <field name="estado_operacion">confirmado</field>
+            <field name="fecha">10/10/2021</field>
+            <field name="hora">00</field>
+            <field name="id_cliente">56</field>
+            <field name="importe_total ">1590</field>
           </record>
 
-          <record id="object1" model="suit_app.suit_app">
-            <field name="name">Object 1</field>
-            <field name="value">10</field>
+          <record id="object1" model="suit_app.operaciones">
+            <field name="tipo_operacion ">recarga</field>
+            <field name="estado_operacion">confirmado</field>
+            <field name="fecha">10/11/2021</field>
+            <field name="hora">00</field>
+            <field name="id_cliente">56</field>
+            <field name="importe_total ">7800</field>
+          </record>
+        
+        <record id="object2" model="suit_app.operaciones">
+            <field name="tipo_operacion ">compra</field>
+            <field name="estado_operacion">confirmado</field>
+            <field name="fecha">10/11/2021</field>
+            <field name="hora">00</field>
+            <field name="id_cliente">56</field>
+            <field name="importe_total ">1200</field>
+          </record>
+        
+        <record id="object3" model="suit_app.operaciones">
+            <field name="tipo_operacion ">compra</field>
+            <field name="estado_operacion">pendiente</field>
+            <field name="fecha">10/10/2021</field>
+            <field name="hora">00</field>
+            <field name="id_cliente">57</field>
+            <field name="importe_total ">7800</field>
+          </record>
+        
+        <record id="object4" model="suit_app.operaciones">
+            <field name="tipo_operacion ">recarga</field>
+            <field name="estado_operacion">confirmado</field>
+            <field name="fecha">10/10/2021</field>
+            <field name="hora">00</field>
+            <field name="id_cliente">57</field>
+            <field name="importe_total ">10989</field>
           </record>
 
-          <record id="object2" model="suit_app.suit_app">
-            <field name="name">Object 2</field>
-            <field name="value">20</field>
+          <record id="object5" model="suit_app.operaciones">
+            <field name="tipo_operacion ">recarga</field>
+            <field name="estado_operacion">confirmado</field>
+            <field name="fecha">10/11/2021</field>
+            <field name="hora">00</field>
+            <field name="id_cliente">57</field>
+            <field name="importe_total ">4530</field>
+          </record>
+        
+        <record id="object6" model="suit_app.operaciones">
+            <field name="tipo_operacion ">compra</field>
+            <field name="estado_operacion">confirmado</field>
+            <field name="fecha">10/11/2021</field>
+            <field name="hora">00</field>
+            <field name="id_cliente">57</field>
+            <field name="importe_total ">1350</field>
+          </record>
+        
+        <record id="object7" model="suit_app.operaciones">
+            <field name="tipo_operacion ">compra</field>
+            <field name="estado_operacion">pendiente</field>
+            <field name="fecha">10/10/2021</field>
+            <field name="hora">00</field>
+            <field name="id_cliente">58</field>
+            <field name="importe_total ">7800</field>
           </record>
 
-          <record id="object3" model="suit_app.suit_app">
-            <field name="name">Object 3</field>
-            <field name="value">30</field>
-          </record>
-
-          <record id="object4" model="suit_app.suit_app">
-            <field name="name">Object 4</field>
-            <field name="value">40</field>
-          </record>
--->
     </data>
 </odoo>
